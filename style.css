@@ -7,10 +7,39 @@ body {
   font-family: Raleway, Helvetica, Arial, sans-serif;
   font-size: 18px;
   height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 a {
-  color: #01a425;
+  color: #d22e7a !important
+}
+
+/* .hang {
+  height: 200px;
+  background-size: contain;
+  width: auto;
+} */
+
+.container {
+  bottom: 0;
+  left: 0;
+  height: 200px;
+  margin: auto;
+  position: relative;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+.container .hang {
+  max-width: 100%;
+}
+
+
+.green-link {
+  color: #01a425 !important;
 }
 
 h1,
@@ -55,43 +84,53 @@ body {
 
 #header {
   /* background: #ccc; */
+  padding-top: 20px;
   height: 100px;
+  margin: 0;
 }
 
-#header h1 {
+#h1 {
   margin: 0;
   padding-top: 15px;
 }
 
-main {
+/* main {
   padding-bottom: 10010px;
   margin-bottom: -10000px;
   float: left;
   width: 100%;
-}
+} */
 
 #nav {
-  padding-bottom: 10010px;
-  margin-bottom: -10000px;
+  /* padding-bottom: 10010px;
+  margin-bottom: -10000px; 
   float: left;
   width: 230px;
   margin-left: -100%;
-  /* background: #eee; */
+   background: #eee; */
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  /* overflow: hidden; */
+  overflow-y: scroll;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+  /* overflow: hidden; */
 }
 
 #footer {
-  clear: left;
+  position: absolute;
+  /* bottom: 0; */
   width: 100%;
-  /* background: #ccc; */
+  height: 2.5rem;            /* Footer height */
   text-align: center;
-  /* padding: 4px 0; */
-  bottom: 0;
-  position: fixed;
 }
 
-#wrapper {
-  overflow: hidden;
-}
+
       
 #content {
   /* margin-left: 230px; Same as 'nav' width */
@@ -119,6 +158,5 @@ nav ul a {
   color: rgb(182, 0, 161);
   text-decoration: none;
 }
-
 
 
